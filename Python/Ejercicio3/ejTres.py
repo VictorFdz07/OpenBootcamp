@@ -1,11 +1,7 @@
-print("Ingrese su peso en Kilogramos: ")
-peso = input()
-peso = float (peso)
+peso = input("Ingrese su peso en Kilogramos: ")
 
-print("Ingrese su estatura en Metros: ")
-estatura = input()
-estatura = float (estatura)
+estatura = input("Ingrese su estatura en Metros: ")
 
-imc = peso/(estatura**2)
+imc = round(float(peso)/(float(estatura)**2),2)
 
-print("Tu índice de masa corporal es:",round(imc, 2))
+print("Tu índice de masa corporal es: "+str(imc))
